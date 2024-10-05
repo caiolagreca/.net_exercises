@@ -8,12 +8,13 @@ namespace While
         static int SumPositiveNumber()
         {
             int sumNumbers = 0;
-            while (true)
+            int number = 0;
+            do
             {
                 Console.WriteLine("Insert a number:");
                 string inputNumber = Console.ReadLine();
-                bool result = int.TryParse(inputNumber, out int number);
-                
+                bool result = int.TryParse(inputNumber, out number);
+
                 if (result)
                 {
                     if (number > 0)
@@ -29,7 +30,9 @@ namespace While
                 {
                     Console.WriteLine("Insert a valid number");
                 }
-            }
+            } while (number > 0);
+
+
             return sumNumbers;
         }
 
