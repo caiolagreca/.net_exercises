@@ -1,5 +1,4 @@
-﻿/* Exercício 1: Contador de Números Pares
-
+﻿/* Exercício 1: Counting Even Numbers
 Escreva um programa que conte e exiba a quantidade de números pares entre 1 e 100. Utilize um loop while para iterar pelos números e uma estrutura if-else para verificar a paridade de cada número. */
 
 namespace While
@@ -17,7 +16,7 @@ namespace While
             Console.WriteLine($"List of odd numbers = {string.Join(", ", (List<int>)result[3])}");
         }
 
-        public static object[] CountNumbers(int numbers)
+    public static object[] CountNumbers(int numbers)
         {
             int counter = 1;
             int even = 0;
