@@ -16,7 +16,7 @@ namespace While
             Console.WriteLine($"List of odd numbers = {string.Join(", ", (List<int>)result[3])}");
         }
 
-    public static object[] CountNumbers(int numbers)
+        public static object[] CountNumbers(int numbers)
         {
             int counter = 1;
             int even = 0;
